@@ -18,7 +18,7 @@ function clickHandler(){
     var text = textInput.value
     fetch(newUrl(text))
   .then(response => response.json())
-  .then(json => {//
+  .then(json => {
     console.log(json)
 
     if(json.error.code === 429) {

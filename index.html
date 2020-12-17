@@ -6,7 +6,7 @@
     <title>Dolan Talk</title>
     <style>
         textarea {
-            width: 75%;
+            width: 80%;
             height: 8vh;
             display: block;
             margin: 1rem;
@@ -15,7 +15,7 @@
 
 
         #output {
-            width: 75%;
+            width: 80%;
             height: 10vh;
             border: 1px solid black;
             margin: 1rem;
@@ -28,19 +28,31 @@
             padding: 1rem;
             width: 75%;
             background-color: black;
-            color: white;
+            color:cornsilk;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+
         }
+
+       body{
+           background-image: url('/bckgrngimg.svg');
+             background-repeat: no-repeat;
+             background-size: 1000px 1500px;
+             background-color: azure;
+       }
     </style>
 
 </head>
 <body>
-    <h1>Dolan Talk</h1>
+    <h1 style="background-color: aqua; text-align: center; font-weight: bolder;font-size: 3rem;">Dolan Talk</h1>
     <textarea id="txt-inp" placeholder="Enter yopur text here"></textarea>
     <button id = "btn-modify">Translate </button>
     <div style="font-size: large;">Output will apper 👇</div>
     <div id= "output"></div>
+ 
     
-
     <script src="app.js" type="text/javascript"></script>
 
 </body>
