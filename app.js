@@ -21,17 +21,14 @@ function clickHandler(){
   .then(json => {
     console.log(json)
 
-    if(json.error.code === 429) {
-        alert('server is busy')
-    }else {
-        var transText= json.contents.translation
-        output.innerText = transText
+    
+    var transText= json.contents.translation
+    output.innerText = transText
 
-    }
+    
 
 })
 .catch(errorHandler)
-  
     
     
 }
