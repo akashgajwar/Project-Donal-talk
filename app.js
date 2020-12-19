@@ -21,15 +21,11 @@ function clickHandler(){
   .then(json => {
     console.log(json)
 
-    
     var transText= json.contents.translation
     output.innerText = transText
 
-    
-
 })
 .catch(errorHandler)
-    
-    
+       
 }
 Translated.addEventListener("click", clickHandler)
